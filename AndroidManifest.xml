@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forwarder.artfile">
+  <application android:label="ART Launcher" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+    <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="file" android:pathPattern=".*\\.art" android:mimeType="*/*"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
